@@ -9,29 +9,40 @@
       href="https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100..800&family=Cantora+One&family=Mooli&display=swap"
       rel="stylesheet"
     />
-    <title>Weather forecast</title>
-    <link rel="icon" type="image/x-icon" href="sources/sun.svg" />
-    <link rel="stylesheet" href="styles.css" />
+    <title>Quick Check</title>
+    <link rel="icon" type="image/x-icon" href="src/sun.svg" />
+    <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
     <div class="weather-window">
       <header>
-        <h1>MÉTÉO</h1>
-        <form>
-          <input type="search" placeholder="Enter a city.." required />
-          <input type="submit" value="Search" />
+        <h1>QUICK CHECK</h1>
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Check" class="search-form-button" />
         </form>
       </header>
       <main>
-        <div>
-          <h1>Rotterdam</h1>
-          <p>
-            Humidity: 66%, Wind: 3.13km/h
-            <br />
-            Tuesday, 15:05
-          </p>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">Rotterdam</h1>
+            <p class="weather-app-details">
+              Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
+              <br />
+              Tuesday, 15:05
+            </p>
+          </div>
+          <div class="weather-app-temperature">
+            <div class="weather-icon">🌤️</div>
+            <div class="weather-value">25</div>
+            <div class="weather-unit">°C</div>
+          </div>
         </div>
-        <div>🌤️ 25°C</div>
       </main>
       <footer>
         <p>
