@@ -17,12 +17,13 @@
     <div class="weather-window">
       <header>
         <h1>QUICK CHECK</h1>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a city.."
             required
             class="search-form-input"
+            id="search-form-input"
           />
           <input type="submit" value="Check" class="search-form-button" />
         </form>
@@ -30,7 +31,7 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-app-city">Rotterdam</h1>
+            <h1 class="weather-app-city" id="city-display">Rotterdam</h1>
             <p class="weather-app-details">
               Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
               <br />
@@ -61,5 +62,6 @@
         </p>
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
