@@ -75,7 +75,7 @@ main {
 }
 
 .weather-icon {
-  margin-top: 0px;  
+  margin-top: -10px;  
   width: 88px; 
   height: 88px; 
 }
