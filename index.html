@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3/build/global/luxon.min.js"></script>
     <title>Quick Check</title>
     <link rel="icon" type="image/x-icon" href="src/cloud-icon.svg" />
     <link rel="stylesheet" href="src/styles.css" />
@@ -17,7 +18,7 @@
   <body>
     <div class="weather-window">
       <header>
-        <h1>QUICK CHECK</h1>
+        <h1 class="title">QUICK CHECK</h1>
         <form class="search-form" id="search-form">
           <input
             type="search"
@@ -34,14 +35,19 @@
           <div>
             <h1 class="weather-app-city" id="city-display"></h1>
             <p class="weather-app-details">
-              Humidity: <strong id="humidity"></strong>, Wind: <strong id="wind-speed"></strong>
+              Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="wind-speed"></strong>
               <br />
-              <span id="time">Tuesday 15:05 </span> <span id="description">scattered clouds</span>
+              <span id="time">Tuesday 15:05 </span>
+              <span id="description">scattered clouds</span>
             </p>
           </div>
           <div class="weather-app-temperature">
             <div id="icon">
-              <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-day.png" class="weather-icon"/>
+              <img
+                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-day.png"
+                class="weather-icon"
+              />
             </div>
             <div class="weather-value" id="temperature-value">25</div>
             <div class="weather-unit">°C</div>
@@ -55,9 +61,7 @@
             >open-source project</a
           >
           is coded by
-          <a
-            href="https://github.com/masha-smkh23"
-            target="_blank"
+          <a href="https://github.com/masha-smkh23" target="_blank"
             >Mariia S.</a
           >
           & hosted on
